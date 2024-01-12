@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    background-color: #021F49;
+}
+
+
+/* MEDIA 320PX */
+
+@media(min-width:320px){
+
+    .headerIndex .logoEmpresa{
+        display: none;
+    }
+
+
+
+    /* NAVBAR */
+
+
+   /* CARDS */
+    .cardsPortada{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+}
+    .cardsPortada .primerDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .cardsPortada .segundoDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+
+
+   /* FOOTER */
+
+    .derechosReservados{
+        background-color: rgb(231, 231, 231);
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+    .derechosReservados p{
+        color: rgb(0, 0, 0);
+        
+    }
+
+}
+
+@media(min-width:760px){
+    .cardsPortada .primerDiv .primerCard img{
+        height: 100%;
+    }
+    .cardsPortada .segundoDiv .tercerCard img{
+        height: 100%;
+    }
+}
+
+@media(min-width:1024px){
+    .cardsPortada .primerDiv{
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+    .cardsPortada .primerDiv .primerCard img{
+        height: 100%;
+    }
+    
+    .cardsPortada .segundoDiv{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+        gap: 50px;
+    }
+    .cardsPortada .segundoDiv .tercerCard img{
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+
+/* FUNCIONES, VARIABLES Y BLOQUES */
+
+
+
+
+
+
+
+
+
+
+
