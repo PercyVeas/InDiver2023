@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="">
     <meta name="Descripción" content="">
     <title> Nosotros || InDiver </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="">
 </head>
@@ -15,28 +16,52 @@
 
         <header class="allNosotros">
 
-            <div class="contMenu">
-                <ul>
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="#">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="./cursos.html">Cursos</a>
-                    </li>
-                    <li>
-                        <a href="./productos.html">Productos</a>
-                    </li>
-                    <li>
-                        <a href="./trabajos.html">Trabajos</a>
-                    </li>
-                    <li>
-                        <a href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" img="./assets/icon/logo_empresa-modified.png" href="#">InDiver</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cursos
+                            </a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./pages/cursosbuceo/buceoComercial.html">Buceo Comercial</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="./pages/cursosbuceo/buceodeportivo.html">Buceo Deportivo</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="./pages/cursosbuceo/buceonocturno.html">Buceo nocturno</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="./pages/cursosbuceo/fotografiasubmarina.html">Fotografia Submarina</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="./pages/cursosbuceo/iniciacion.html">Iniciacion al Buceo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./cursos.html">Inmersiones y cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./trabajos.html">Trabajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
     
 
     </header>
@@ -52,20 +77,15 @@
             </p>
         </section>
 
-        <section class="imagenesNosotros">
+    
 
-            <div class="imagenUno">
-                <img src="../assets/img/buceo_animal.jpg" alt="buzo con animales marinos">
-            </div>
-
-            <div class="imagenDos">
-                <img src="../assets/img/ruina_submarina.jpg" alt="ruina submarina">
-            </div>
-
-            <div class="imagenTres">
-                <img src="../assets/img/commercial-diver2.jpg" alt="buzo comercial">
-            </div>
+        <section class="contenedorImagenes container-fluid">
+            <img src="../assets/img/buceo_animal.jpg" class="primeraImgnosotros img-thumbnail" class="rounded mx-auto d-block" alt="...">
+            <img src="../assets/img/ruina_submarina.jpg" class="segundaImgnosotros img-thumbnail" class="rounded mx-auto d-block" alt="...">
+            <img src="../assets/img/commercial-diver2.jpg" class="terceraImgnosotros img-thumbnail" class="rounded mx-auto d-block" alt="...">
         </section>
+
+    
 
         <section class="segundaIntro">
             <p>
@@ -76,7 +96,7 @@
 
     </main>
 
-    <footer>
+    <footer class="footerNosotros">
 
         <div class="derechosReservados">
             <p>
@@ -85,6 +105,10 @@
         </div>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
 
 </body>
 </html>

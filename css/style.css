@@ -45,6 +45,25 @@ body{
         gap: 20px;
     }
 
+    /* NOSOTROS PAGE */
+
+    .mainNosotros .textoIntro p{
+        text-align: center;
+        background-color: bisque;
+        margin-top: 20px;
+    }
+
+    .mainNosotros .contenedorImagenes{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mainNosotros .segundaIntro{
+        text-align: center;
+        background-color: bisque;
+        margin-top: 20px;
+    }
 
 
 
@@ -62,6 +81,8 @@ body{
         color: rgb(0, 0, 0);
         
     }
+
+
 
 }
 
@@ -92,6 +113,34 @@ body{
     }
     .cardsPortada .segundoDiv .tercerCard img{
         height: 100%;
+    }
+
+    .mainNosotros .contenedorImagenes{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+    }
+
+    .mainNosotros .contenedorImagenes .primeraImgnosotros{
+        height: 300px;
+        width: 300px;
+    }
+    .mainNosotros .contenedorImagenes .segundaImgnosotros{
+        height: 300px;
+        width: 300px;
+    }
+    .mainNosotros .contenedorImagenes .terceraImgnosotros{
+        height: 300px;
+        width: 300px;
+    }
+
+    /* FOOTER  */
+
+    .footerNosotros .derechosReservados{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 }
 
