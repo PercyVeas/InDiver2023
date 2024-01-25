@@ -1,0 +1,47 @@
+
+@media (min-width: 768px){
+
+    .allIndex{
+        .mainIndex{
+            .cardsPortada{
+                .primerDiv{
+                    .primerCard{
+                        img{
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                .segundoDiv{
+                    img{
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+    /*  CONTACTO 
+    .mainContacto{
+        .formularioContacto{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .nombreForm{
+                margin-left: 265px;
+            }
+            .apellidoForm{
+                margin-left: 265px;
+            }
+            .contFormcorreo{
+                text-align: center;
+                margin-left: 265px;
+            }
+            .botonContacto{
+                margin-left: 295px;
+                width: 200px;
+            }
+        }
+    } */
+
+}

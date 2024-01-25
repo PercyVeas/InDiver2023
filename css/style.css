@@ -1,164 +1,127 @@
+/* BACKGROUND DE TODAS LAS PAGINAS */
+* {
+  box-sizing: border-box;
+  padding: 0; }
 
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:wght@300&display=swap');
+.allIndex {
+  background-color: #71abee; }
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-}
+.cardsPortada {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; }
+  .cardsPortada .primerDiv {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .cardsPortada .segundoDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px; }
 
-body{
-    background-color: #021F49;
-}
+@media (min-width: 768px) {
+  .allIndex .mainIndex .cardsPortada .primerDiv .primerCard img {
+    height: 100%;
+    object-fit: cover; }
+  .allIndex .mainIndex .cardsPortada .segundoDiv img {
+    height: 100%;
+    object-fit: cover; }
+  /*  CONTACTO 
+    .mainContacto{
+        .formularioContacto{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .nombreForm{
+                margin-left: 265px;
+            }
+            .apellidoForm{
+                margin-left: 265px;
+            }
+            .contFormcorreo{
+                text-align: center;
+                margin-left: 265px;
+            }
+            .botonContacto{
+                margin-left: 295px;
+                width: 200px;
+            }
+        }
+    } */ }
 
+@media (min-width: 1024px) {
+  /* INDEX */
+  .allIndex .mainIndex .carousel-item .img-fluid {
+    width: 100%;
+    height: 400px; }
+  .allIndex .mainIndex .cardsPortada {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+  .allIndex .derechosReservados {
+    text-align: center; }
+  /* CONTACTO */
+  .mainContacto .contformularioContacto {
+    align-items: center; }
+    .mainContacto .contformularioContacto .formularioContacto {
+      margin-left: 90px; }
+      .mainContacto .contformularioContacto .formularioContacto .contFormcorreo {
+        text-align: center; }
+      .mainContacto .contformularioContacto .formularioContacto .botonContacto {
+        width: 200px;
+        margin-left: 330px; } }
 
-/* MEDIA 320PX */
+@media (min-width: 1200px) {
+  /* CONTACTO */
+  .mainContacto .contformularioContacto .formularioContacto {
+    margin-left: 160px; }
+    .mainContacto .contformularioContacto .formularioContacto .botonContacto {
+      margin-left: 340px; } }
 
-@media(min-width:320px){
+@media (min-width: 1440px) {
+  /* CONTACTO*/
+  .mainContacto .contformularioContacto .formularioContacto {
+    margin-left: 250px; }
+    .mainContacto .contformularioContacto .formularioContacto .botonContacto {
+      margin-left: 370px; } }
 
-    .headerIndex .logoEmpresa{
-        display: none;
-    }
+@media (min-width: 1600px) {
+  /* CONTACTO */
+  .mainContacto .contformularioContacto .formularioContacto {
+    margin-left: 350px; }
+    .mainContacto .contformularioContacto .formularioContacto .botonContacto {
+      margin-left: 400px; } }
 
+@media (min-width: 1800px) {
+  /* CONTACTO */
+  .mainContacto .contformularioContacto .formularioContacto {
+    margin-left: 390px; }
+    .mainContacto .contformularioContacto .formularioContacto .botonContacto {
+      margin-left: 420px; } }
 
+@media (min-width: 1920px) {
+  /* CONTACTO */
+  .mainContacto .contformularioContacto .formularioContacto {
+    margin-left: 450px; }
+    .mainContacto .contformularioContacto .formularioContacto .botonContacto {
+      margin-left: 420px; } }
 
-    /* NAVBAR */
+@media (min-width: 2200px) {
+  /* CONTACTO */
+  .mainContacto .contformularioContacto .formularioContacto {
+    margin-left: 525px; }
+    .mainContacto .contformularioContacto .formularioContacto .botonContacto {
+      margin-left: 480px; } }
 
-
-   /* CARDS */
-    .cardsPortada{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 50px;
-}
-    .cardsPortada .primerDiv{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 30px;
-    }
-    .cardsPortada .segundoDiv{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    /* NOSOTROS PAGE */
-
-    .mainNosotros .textoIntro p{
-        text-align: center;
-        background-color: bisque;
-        margin-top: 20px;
-    }
-
-    .mainNosotros .contenedorImagenes{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .mainNosotros .segundaIntro{
-        text-align: center;
-        background-color: bisque;
-        margin-top: 20px;
-    }
-
-
-
-   /* FOOTER */
-
-    .derechosReservados{
-        background-color: rgb(231, 231, 231);
-        border-radius: 3px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-}
-
-    .derechosReservados p{
-        color: rgb(0, 0, 0);
-        
-    }
-
-
-
-}
-
-@media(min-width:760px){
-    .cardsPortada .primerDiv .primerCard img{
-        height: 100%;
-    }
-    .cardsPortada .segundoDiv .tercerCard img{
-        height: 100%;
-    }
-}
-
-@media(min-width:1024px){
-    .cardsPortada .primerDiv{
-        display: flex;
-        flex-direction: row;
-        gap: 100px;
-    }
-    .cardsPortada .primerDiv .primerCard img{
-        height: 100%;
-    }
-    
-    .cardsPortada .segundoDiv{
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 50px;
-        gap: 50px;
-    }
-    .cardsPortada .segundoDiv .tercerCard img{
-        height: 100%;
-    }
-
-    .mainNosotros .contenedorImagenes{
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-around;
-    }
-
-    .mainNosotros .contenedorImagenes .primeraImgnosotros{
-        height: 300px;
-        width: 300px;
-    }
-    .mainNosotros .contenedorImagenes .segundaImgnosotros{
-        height: 300px;
-        width: 300px;
-    }
-    .mainNosotros .contenedorImagenes .terceraImgnosotros{
-        height: 300px;
-        width: 300px;
-    }
-
-    /* FOOTER  */
-
-    .footerNosotros .derechosReservados{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
-}
-
-
-
-
-
-
-
-/* FUNCIONES, VARIABLES Y BLOQUES */
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width: 2560px) {
+  /* CONTACTO */
+  .mainContacto .contformularioContacto .formularioContacto {
+    margin-left: 700px; }
+    .mainContacto .contformularioContacto .formularioContacto .botonContacto {
+      margin-left: 480px; } }
