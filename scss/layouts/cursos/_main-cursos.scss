@@ -1,0 +1,43 @@
+
+.allCursos{
+    .mainCursos{
+        .parrIntro{
+            background-color: rgb(238, 238, 215);
+            border-radius: 5px;
+            text-align: center;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 15px;
+        }
+        .imagenprincipalCursos img{
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+        .contcardsCursos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .primerasCards{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .card{
+                text-align: center;
+            }
+        }
+        .segundasCards{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .card{
+                text-align: center;
+            }
+        }
+    }
+}

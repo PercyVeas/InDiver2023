@@ -1,0 +1,20 @@
+
+.mainNosotros{
+    .textoIntro{
+        background-color: rgb(231, 231, 231);
+        text-align: center;
+        margin: 5px 5px 5px 5px;
+        border-radius: 5px;
+    }
+    .contenedorImagenes{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .segundaIntro{
+        background-color: rgb(231, 231, 231);
+        text-align: center;
+        margin: 10px 10px;
+        border-radius: 5px;
+    }
+}

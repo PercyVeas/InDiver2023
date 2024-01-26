@@ -22,23 +22,67 @@
         }
     }
 
+    /* NOSOTROS */
 
-    /* CONTACTO */
-    .mainContacto{
-        .contformularioContacto{
-            align-items: center;
-            .formularioContacto{
-                margin-left: 90px;
-                .contFormcorreo{
-                    text-align: center;
+    .allNosotros{
+        .mainNosotros{
+            .contenedorImagenes{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                img{
+                    width: 400px;
+                    height: 400px;
+                    object-fit: cover;
+                    
                 }
-                .botonContacto{
-                    width: 200px;
-                    margin-left: 330px;
+            }
+        }
+    }
+
+
+    /* CURSOS */
+
+    .allCursos{
+        .mainCursos{
+            .contcardsCursos{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                .segundasCards{
+                    margin-bottom: 15px;
                 }
             }
         }
         
     }
 
+    /* TRABAJOS */
+
+    .allTrabajos{
+        .mainTrabajos{
+            .imagenesTrabajos{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                object-fit: cover;
+                justify-content: space-around;
+                .contImagentrabajos{
+                    img{
+                        width: 300px;
+                        height: 300px;
+                    }
+                }
+            }
+            .contBoton{
+                margin-top: 80px;
+            }
+        }
+        .derechosReservados{
+            margin-bottom: 0;
+        }
+    }
+
+
 }
+

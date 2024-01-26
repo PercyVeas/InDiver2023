@@ -1,0 +1,27 @@
+
+.allTrabajos{
+    .mainTrabajos{
+        .parrTrabajo{
+            text-align: center;
+            background-color: rgb(207, 219, 215);
+            border-radius: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .imagenesTrabajos{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .contImagentrabajos{
+                img{
+                    border-radius: 12px;
+                }
+            }
+        }
+        .contBoton{
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+}

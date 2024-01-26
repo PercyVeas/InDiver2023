@@ -6,6 +6,15 @@
 .allIndex {
   background-color: #71abee; }
 
+.allCursos {
+  background-color: #71bcee; }
+
+.allTrabajos {
+  background-color: #9ed4f8; }
+
+.allContacto {
+  background-color: #e8eeeb; }
+
 .cardsPortada {
   margin-top: 10px;
   display: flex;
@@ -25,35 +34,118 @@
     gap: 15px;
     margin-bottom: 15px; }
 
+.mainNosotros .textoIntro {
+  background-color: #e7e7e7;
+  text-align: center;
+  margin: 5px 5px 5px 5px;
+  border-radius: 5px; }
+
+.mainNosotros .contenedorImagenes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; }
+
+.mainNosotros .segundaIntro {
+  background-color: #e7e7e7;
+  text-align: center;
+  margin: 10px 10px;
+  border-radius: 5px; }
+
+.derechosReservados {
+  text-align: center; }
+
+.allCursos .mainCursos .parrIntro {
+  background-color: #eeeed7;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px; }
+
+.allCursos .mainCursos .imagenprincipalCursos img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover; }
+
+.allCursos .mainCursos .contcardsCursos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px; }
+
+.allCursos .mainCursos .primerasCards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; }
+  .allCursos .mainCursos .primerasCards .card {
+    text-align: center; }
+
+.allCursos .mainCursos .segundasCards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; }
+  .allCursos .mainCursos .segundasCards .card {
+    text-align: center; }
+
+.allTrabajos .mainTrabajos .parrTrabajo {
+  text-align: center;
+  background-color: #cfdbd7;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.allTrabajos .mainTrabajos .imagenesTrabajos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; }
+  .allTrabajos .mainTrabajos .imagenesTrabajos .contImagentrabajos img {
+    border-radius: 12px; }
+
+.allTrabajos .mainTrabajos .contBoton {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.mainContacto .formulario {
+  margin-top: 15px;
+  background-color: #c4f1ef;
+  margin-left: 8px;
+  margin-right: 8px;
+  border-radius: 5px; }
+  .mainContacto .formulario .tituloFormulario {
+    margin-top: 20px;
+    margin-bottom: 40px; }
+  .mainContacto .formulario .contformularioContacto {
+    margin-top: 20px;
+    margin-bottom: 15px; }
+
 @media (min-width: 768px) {
+  /* INDEX */
   .allIndex .mainIndex .cardsPortada .primerDiv .primerCard img {
     height: 100%;
     object-fit: cover; }
   .allIndex .mainIndex .cardsPortada .segundoDiv img {
     height: 100%;
     object-fit: cover; }
-  /*  CONTACTO 
-    .mainContacto{
-        .formularioContacto{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            .nombreForm{
-                margin-left: 265px;
-            }
-            .apellidoForm{
-                margin-left: 265px;
-            }
-            .contFormcorreo{
-                text-align: center;
-                margin-left: 265px;
-            }
-            .botonContacto{
-                margin-left: 295px;
-                width: 200px;
-            }
-        }
-    } */ }
+  /* TRABAJOS */
+  .allTrabajos .mainTrabajos .imagenesTrabajos {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center; }
+    .allTrabajos .mainTrabajos .imagenesTrabajos .contImagentrabajos {
+      text-align: center; }
+      .allTrabajos .mainTrabajos .imagenesTrabajos .contImagentrabajos img {
+        width: 500px;
+        height: 500px; }
+  /* CONTACTO */
+  .allContacto .mainContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 @media (min-width: 1024px) {
   /* INDEX */
@@ -66,62 +158,33 @@
     justify-content: space-around; }
   .allIndex .derechosReservados {
     text-align: center; }
-  /* CONTACTO */
-  .mainContacto .contformularioContacto {
-    align-items: center; }
-    .mainContacto .contformularioContacto .formularioContacto {
-      margin-left: 90px; }
-      .mainContacto .contformularioContacto .formularioContacto .contFormcorreo {
-        text-align: center; }
-      .mainContacto .contformularioContacto .formularioContacto .botonContacto {
-        width: 200px;
-        margin-left: 330px; } }
-
-@media (min-width: 1200px) {
-  /* CONTACTO */
-  .mainContacto .contformularioContacto .formularioContacto {
-    margin-left: 160px; }
-    .mainContacto .contformularioContacto .formularioContacto .botonContacto {
-      margin-left: 340px; } }
-
-@media (min-width: 1440px) {
-  /* CONTACTO*/
-  .mainContacto .contformularioContacto .formularioContacto {
-    margin-left: 250px; }
-    .mainContacto .contformularioContacto .formularioContacto .botonContacto {
-      margin-left: 370px; } }
-
-@media (min-width: 1600px) {
-  /* CONTACTO */
-  .mainContacto .contformularioContacto .formularioContacto {
-    margin-left: 350px; }
-    .mainContacto .contformularioContacto .formularioContacto .botonContacto {
-      margin-left: 400px; } }
-
-@media (min-width: 1800px) {
-  /* CONTACTO */
-  .mainContacto .contformularioContacto .formularioContacto {
-    margin-left: 390px; }
-    .mainContacto .contformularioContacto .formularioContacto .botonContacto {
-      margin-left: 420px; } }
-
-@media (min-width: 1920px) {
-  /* CONTACTO */
-  .mainContacto .contformularioContacto .formularioContacto {
-    margin-left: 450px; }
-    .mainContacto .contformularioContacto .formularioContacto .botonContacto {
-      margin-left: 420px; } }
-
-@media (min-width: 2200px) {
-  /* CONTACTO */
-  .mainContacto .contformularioContacto .formularioContacto {
-    margin-left: 525px; }
-    .mainContacto .contformularioContacto .formularioContacto .botonContacto {
-      margin-left: 480px; } }
-
-@media (min-width: 2560px) {
-  /* CONTACTO */
-  .mainContacto .contformularioContacto .formularioContacto {
-    margin-left: 700px; }
-    .mainContacto .contformularioContacto .formularioContacto .botonContacto {
-      margin-left: 480px; } }
+  /* NOSOTROS */
+  .allNosotros .mainNosotros .contenedorImagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .allNosotros .mainNosotros .contenedorImagenes img {
+      width: 400px;
+      height: 400px;
+      object-fit: cover; }
+  /* CURSOS */
+  .allCursos .mainCursos .contcardsCursos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .allCursos .mainCursos .contcardsCursos .segundasCards {
+      margin-bottom: 15px; }
+  /* TRABAJOS */
+  .allTrabajos .mainTrabajos .imagenesTrabajos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    object-fit: cover;
+    justify-content: space-around; }
+    .allTrabajos .mainTrabajos .imagenesTrabajos .contImagentrabajos img {
+      width: 300px;
+      height: 300px; }
+  .allTrabajos .mainTrabajos .contBoton {
+    margin-top: 80px; }
+  .allTrabajos .derechosReservados {
+    margin-bottom: 0; } }
