@@ -16,7 +16,10 @@
   background-color: #e8eeeb; }
 
 .allNosotros {
-  background-color: #DFEAEC; }
+  background-color: #7188ee; }
+
+.allProductos {
+  background-color: #275866; }
 
 .cardsPortada {
   margin-top: 10px;
@@ -30,11 +33,6 @@
     align-items: center;
     justify-content: center;
     gap: 15px; }
-    .cardsPortada .primerDiv .card:hover {
-      transform: scale(1.1);
-      border: 1px solid;
-      box-shadow: 0px 0px 10px #666;
-      transition: 1s; }
   .cardsPortada .segundoDiv {
     display: flex;
     flex-direction: column;
@@ -43,16 +41,12 @@
     gap: 30px;
     margin-bottom: 20px;
     margin-top: 20px; }
-    .cardsPortada .segundoDiv .card:hover {
-      transform: scale(1.1);
-      border: 1px solid;
-      box-shadow: 0px 0px 10px #666;
-      transition: 1s; }
 
 .mainNosotros .textoIntro {
   text-align: center;
   margin: 5px 5px 5px 5px;
-  border-radius: 5px; }
+  margin-top: 30px;
+  margin-bottom: 30px; }
 
 .mainNosotros .contenedorImagenes {
   display: flex;
@@ -62,7 +56,8 @@
 .mainNosotros .segundaIntro {
   text-align: center;
   margin: 10px 10px;
-  border-radius: 5px; }
+  margin-top: 30px;
+  margin-bottom: 30px; }
 
 .derechosReservados {
   text-align: center; }
@@ -91,14 +86,9 @@
 .allCursos .mainCursos .primerasCards {
   display: flex;
   flex-direction: column;
-  gap: 35px; }
+  gap: 45px; }
   .allCursos .mainCursos .primerasCards .card {
     text-align: center; }
-  .allCursos .mainCursos .primerasCards .card:hover {
-    transform: scale(1.1);
-    border: 1px solid;
-    box-shadow: 0px 0px 25px #666;
-    transition: 1s; }
 
 .allCursos .mainCursos .segundasCards {
   display: flex;
@@ -106,30 +96,50 @@
   gap: 35px; }
   .allCursos .mainCursos .segundasCards .card {
     text-align: center; }
-  .allCursos .mainCursos .segundasCards .card:hover {
-    transform: scale(1.1);
-    border: 1px solid;
-    box-shadow: 0px 0px 25px #666;
-    transition: 1s; }
+
+.footerCursos {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.allProductos {
+  background-image: url(../../../assets/img/buzo_perdido.jpg);
+  background-position: center;
+  height: 100vh;
+  object-fit: cover; }
+  .allProductos .mainProductos .textoError {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 180px;
+    color: #d1e1ff; }
+  .allProductos .mainProductos .botonRegreso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px; }
 
 .allTrabajos .mainTrabajos .parrTrabajo {
   text-align: center;
-  background-color: #cfdbd7;
   border-radius: 5px;
-  margin-left: 10px;
-  margin-right: 10px; }
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .allTrabajos .mainTrabajos .imagenesTrabajos {
   display: flex;
   flex-direction: column;
-  gap: 15px; }
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px; }
   .allTrabajos .mainTrabajos .imagenesTrabajos .contImagentrabajos img {
     border-radius: 12px; }
 
 .allTrabajos .mainTrabajos .contBoton {
   text-align: center;
   margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-bottom: 25px; }
 
 .mainContacto .formulario {
   margin-top: 15px;
@@ -149,9 +159,22 @@
   .allIndex .mainIndex .cardsPortada .primerDiv .primerCard img {
     height: 100%;
     object-fit: cover; }
+  .allIndex .mainIndex .cardsPortada .primerDiv .primerCard .card {
+    text-align: center; }
   .allIndex .mainIndex .cardsPortada .segundoDiv img {
     height: 100%;
     object-fit: cover; }
+  .allIndex .mainIndex .cardsPortada .segundoDiv .card {
+    text-align: center; }
+  /* CURSOS */
+  .allCursos .mainCursos {
+    height: 3100px; }
+    .allCursos .mainCursos .contcardsCursos {
+      gap: 50px;
+      margin-top: 50px;
+      margin-bottom: 60px; }
+  .allCursos .footerCursos {
+    margin-top: 60px; }
   /* TRABAJOS */
   .allTrabajos .mainTrabajos .imagenesTrabajos {
     display: flex;
@@ -167,7 +190,26 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; } }
+    align-items: center;
+    height: 1100px; }
+    .allContacto .mainContacto .formulario {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 700px;
+      height: 1100px; }
+      .allContacto .mainContacto .formulario .tituloFormulario {
+        height: 50px; }
+      .allContacto .mainContacto .formulario .formularioContacto {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        align-items: center; }
+      .allContacto .mainContacto .formulario .contContactos .iconContactos {
+        display: flex;
+        flex-direction: column;
+        gap: 18px; } }
 
 @media (min-width: 1024px) {
   /* INDEX */
@@ -181,6 +223,28 @@
       flex-direction: row;
       justify-content: space-around;
       margin-top: 40px; }
+      .allIndex .mainIndex .cardsPortada .primerDiv .card {
+        align-items: center; }
+      .allIndex .mainIndex .cardsPortada .primerDiv .card:hover {
+        transform: scale(1.1);
+        border: 1px solid;
+        box-shadow: 0px 0px 10px #666;
+        transition: 1s; }
+      .allIndex .mainIndex .cardsPortada .primerDiv .primerCard .card:hover {
+        transform: scale(1.1);
+        border: 1px solid;
+        box-shadow: 0px 0px 10px #666;
+        transition: 1s; }
+      .allIndex .mainIndex .cardsPortada .segundoDiv .card:hover {
+        transform: scale(1.1);
+        border: 1px solid;
+        box-shadow: 0px 0px 10px #666;
+        transition: 1s; }
+      .allIndex .mainIndex .cardsPortada .tercerCard .card:hover {
+        transform: scale(1.1);
+        border: 1px solid;
+        box-shadow: 0px 0px 10px #666;
+        transition: 1s; }
   .allIndex .derechosReservados {
     text-align: center; }
   /* NOSOTROS */
@@ -193,12 +257,34 @@
       height: 400px;
       object-fit: cover; }
   /* CURSOS */
-  .allCursos .mainCursos .contcardsCursos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
-    .allCursos .mainCursos .contcardsCursos .segundasCards {
-      margin-bottom: 15px; }
+  .allCursos .mainCursos {
+    height: 1800px; }
+    .allCursos .mainCursos .contcardsCursos {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      .allCursos .mainCursos .contcardsCursos .primerasCards {
+        display: flex;
+        flex-direction: column;
+        gap: 45px; }
+        .allCursos .mainCursos .contcardsCursos .primerasCards .card {
+          text-align: center; }
+        .allCursos .mainCursos .contcardsCursos .primerasCards .card:hover {
+          transform: scale(1.1);
+          border: 1px solid;
+          box-shadow: 0px 0px 25px #666;
+          transition: 1s; }
+      .allCursos .mainCursos .contcardsCursos .segundasCards {
+        display: flex;
+        flex-direction: column;
+        gap: 45px; }
+        .allCursos .mainCursos .contcardsCursos .segundasCards .card {
+          text-align: center; }
+        .allCursos .mainCursos .contcardsCursos .segundasCards .card:hover {
+          transform: scale(1.1);
+          border: 1px solid;
+          box-shadow: 0px 0px 25px #666;
+          transition: 1s; }
   /* TRABAJOS */
   .allTrabajos .mainTrabajos .imagenesTrabajos {
     display: flex;
@@ -212,4 +298,29 @@
   .allTrabajos .mainTrabajos .contBoton {
     margin-top: 80px; }
   .allTrabajos .derechosReservados {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  /* CONTACTO */
+  .allContacto .mainContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1000px; }
+    .allContacto .mainContacto .formulario {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 600px;
+      height: 1000px; }
+      .allContacto .mainContacto .formulario .tituloFormulario {
+        height: 50px; }
+      .allContacto .mainContacto .formulario .formularioContacto {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        align-items: center; }
+      .allContacto .mainContacto .formulario .contContactos .iconContactos {
+        display: flex;
+        flex-direction: column;
+        gap: 18px; } }

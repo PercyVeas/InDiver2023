@@ -1,0 +1,22 @@
+
+.allProductos{
+    background-image: url(../../../assets/img/buzo_perdido.jpg);
+    background-position: center;
+    height: 100vh;
+    object-fit: cover;
+    .mainProductos{
+        .textoError{
+            text-align: center;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 180px;
+            color: rgb(209, 225, 255);
+        }
+        .botonRegreso{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+    }
+}

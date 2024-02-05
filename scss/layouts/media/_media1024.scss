@@ -17,6 +17,43 @@
                 flex-direction: row;
                 justify-content: space-around;
                 margin-top: 40px;
+                .primerDiv{
+                    .card{
+                        align-items: center;
+                    }
+                    .card:hover{
+                        transform: scale(1.1);
+                        border: 1px solid;
+                        box-shadow: 0px 0px 10px #666;
+                        transition: 1s;
+                        }
+                    .primerCard{
+                        .card:hover{
+                        transform: scale(1.1);
+                        border: 1px solid;
+                        box-shadow: 0px 0px 10px #666;
+                        transition: 1s;
+                        }
+                    }
+                }
+                    
+                .segundoDiv{
+                    .card:hover{
+                        transform: scale(1.1);
+                        border: 1px solid;
+                        box-shadow: 0px 0px 10px #666;
+                        transition: 1s;
+                        }   
+                    }
+                    .tercerCard{
+                        .card:hover{
+                        transform: scale(1.1);
+                        border: 1px solid;
+                        box-shadow: 0px 0px 10px #666;
+                        transition: 1s;
+                        }
+                    }    
+                
             }
         }
         .derechosReservados {
@@ -47,12 +84,38 @@
 
     .allCursos{
         .mainCursos{
+            height: 1800px;
             .contcardsCursos{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
+                .primerasCards{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 45px;
+                    .card{
+                        text-align: center;
+                        }
+                    .card:hover{
+                        transform: scale(1.1);
+                        border: 1px solid;
+                        box-shadow: 0px 0px 25px #666;
+                        transition: 1s;
+                    }
+                }
                 .segundasCards{
-                    margin-bottom: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 45px;
+                    .card{
+                        text-align: center;
+                    }
+                    .card:hover{
+                        transform: scale(1.1);
+                        border: 1px solid;
+                        box-shadow: 0px 0px 25px #666;
+                        transition: 1s;
+                    }
                 }
             }
         }
@@ -82,6 +145,43 @@
         }
         .derechosReservados{
             margin-bottom: 0;
+        }
+    }
+
+    /* CONTACTO */
+
+    .allContacto{
+        .mainContacto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 1000px;
+            .formulario{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 600px;
+                height: 1000px;
+                .tituloFormulario{
+                    height: 50px;
+                }
+                .formularioContacto{
+                    display: flex;
+                    flex-direction: column;
+                    width: 600px;
+                    align-items: center;
+                }
+                .contContactos{
+                    .iconContactos{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 18px;
+                    }
+                }
+                
+            }
         }
     }
 

@@ -25,16 +25,10 @@
         .primerasCards{
             display: flex;
             flex-direction: column;
-            gap: 35px;
+            gap: 45px;
             .card{
                 text-align: center;
                 }
-            .card:hover{
-                transform: scale(1.1);
-                border: 1px solid;
-                box-shadow: 0px 0px 25px #666;
-                transition: 1s;
-            }
         }
         .segundasCards{
             display: flex;
@@ -43,12 +37,6 @@
             .card{
                 text-align: center;
             }
-            .card:hover{
-                transform: scale(1.1);
-                border: 1px solid;
-                box-shadow: 0px 0px 25px #666;
-                transition: 1s;
-            }
-        }
+        } 
     }
 }

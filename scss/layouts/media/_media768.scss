@@ -12,6 +12,9 @@
                             height: 100%;
                             object-fit: cover;
                         }
+                        .card{
+                            text-align: center;
+                            }
                     }
                 }
                 .segundoDiv{
@@ -19,10 +22,30 @@
                         height: 100%;
                         object-fit: cover;
                     }
+                    .card{
+                        text-align: center;
+                        }
                 }
             }
         }
     }
+
+    /* CURSOS */
+    .allCursos{
+        .mainCursos{
+            height: 3100px;
+            .contcardsCursos{
+                gap: 50px;
+                margin-top: 50px;
+                margin-bottom: 60px;
+            }
+        }
+        .footerCursos{
+            margin-top: 60px;
+        }
+    }
+
+
 
     /* TRABAJOS */
 
@@ -44,6 +67,7 @@
     }
 
 
+
     /* CONTACTO */
 
     .allContacto{
@@ -52,6 +76,32 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            height: 1100px;
+            .formulario{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 700px;
+                height: 1100px;
+                .tituloFormulario{
+                    height: 50px;
+                }
+                .formularioContacto{
+                    display: flex;
+                    flex-direction: column;
+                    width: 600px;
+                    align-items: center;
+                }
+                .contContactos{
+                    .iconContactos{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 18px;
+                    }
+                }
+                
+            }
         }
     }
 
